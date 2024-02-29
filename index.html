@@ -9,9 +9,25 @@
 
 <body>
 <div class="main-wrapper">
-     <iframe id="iframe" :src="/document/111.pdf" width="100%" height="100%" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe>
+     <iframe id="iframe" :src="pdfSrc" width="100%" height="100%" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe>
 </div>
-
+<script>
+// 在data中定义pdfSrc变量
+data() {
+  return {
+   pdfSrc: ''
+  }
+},
+methods: {
+  //生成pdfSrc
+  generatePdfSrc() {
+    // 这里的url可以是pdf文件的访问路径，也可以是通过window.URL.createObjectURL（）生成的路径
+  	let pdfUrl = './document/111.pdf' 
+  	// ./static/pdf/web/viewer.html 这里的地址是插件在项目中的地址
+  	this.pdfSrc = './static/pdf/web/viewer.html?file=' +  pdfUrl
+  }
+}
+</script>
 
 </body>
 </html>
