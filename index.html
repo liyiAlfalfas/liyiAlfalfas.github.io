@@ -11,7 +11,7 @@
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">
-	<title>PDFH5</title>
+	<title></title>
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/pdfh5.css" />
 	<link href="https://www.gjtool.cn/download/pdfh5.png" type="image/x-icon" rel="shortcut icon" />
@@ -79,8 +79,8 @@
 	<script src="./vconsole.min.js"></script>
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	<script type="text/javascript">
-		var vConsole = new VConsole();
-		console.log('Hello world');
+		//var vConsole = new VConsole();
+		//console.log('Hello world');
 		var pdfh5;
 		$("#app").remove();
 		$("#demo").show();
@@ -90,9 +90,9 @@
 			// cMapUrl:"https://unpkg.com/pdfjs-dist@2.7.570/cmaps/",
 			// responseType: "blob" // blob arraybuffer
 		});
-		pdfh5.on("complete", function (status, msg, time) {
-			console.log("状态：" + status + "，总耗时：" + time + "毫秒，总页数：" + this.totalNum, msg);
-		});
+		//pdfh5.on("complete", function (status, msg, time) {
+			//console.log("状态：" + status + "，总耗时：" + time + "毫秒，总页数：" + this.totalNum, msg);
+		//});
 		// pdfh5.on("scroll", function (scrollTop, currentNum) {
 		// 	console.log("scrollTop:"+scrollTop,"currentNum:"+currentNum);
 		// });
