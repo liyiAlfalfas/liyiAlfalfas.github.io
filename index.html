@@ -48,23 +48,14 @@
 	<script src="./vconsole.min.js"></script>
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	<script type="text/javascript">
-		//var vConsole = new VConsole();
-		//console.log('Hello world');
+		
 		var pdfh5;
-		$("#app").remove();
 		$("#demo").show();
 		pdfh5 = new Pdfh5('#demo', {
-			pdfurl: "/document/20231122105507-2.pdf",
-			// renderType: "svg",
-			// cMapUrl:"https://unpkg.com/pdfjs-dist@2.7.570/cmaps/",
-			// responseType: "blob" // blob arraybuffer
+			pdfurl: "/document/20231122105507-3.pdf",
+			
 		});
-		//pdfh5.on("complete", function (status, msg, time) {
-			//console.log("状态：" + status + "，总耗时：" + time + "毫秒，总页数：" + this.totalNum, msg);
-		//});
-		// pdfh5.on("scroll", function (scrollTop, currentNum) {
-		// 	console.log("scrollTop:"+scrollTop,"currentNum:"+currentNum);
-		// });
+		
 		//配置项参数 renderType:"svg" 渲染模式为svg，默认canvas
 		// var pdfh5 = new Pdfh5('#demo', {
 		//     pdfurl: "./default.pdf",
