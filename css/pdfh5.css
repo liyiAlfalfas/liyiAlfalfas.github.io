@@ -19,18 +19,18 @@
     position: relative;
     top: 0;
     left: 0;
-    padding: 7px 7px;
+    padding: 6px 6px;
 }
 
 .pdfjs .pdfViewer .pageContainer {
     width: 100%;
-    margin: 0px auto 8px auto;
+    margin: 0px auto 0px auto;
     position: relative;
     overflow: visible;
     -webkit-box-shadow: darkgrey 0px 1px 3px 0px;
     -moz-box-shadow: darkgrey 0px 1px 3px 0px;
     box-shadow: darkgrey 0px 1px 3px 0px;
-    background-color: black;
+    background-color: #f2f1f6;
     box-sizing: border-box;
 }
 
