@@ -19,7 +19,7 @@
     position: relative;
     top: 0;
     left: 0;
-    padding: 6px 6px;
+    padding: 6px 6px 0px 6px;
 }
 
 .pdfjs .pdfViewer .pageContainer {
