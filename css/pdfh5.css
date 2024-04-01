@@ -30,7 +30,7 @@
     -webkit-box-shadow: darkgrey 0px 1px 3px 0px;
     -moz-box-shadow: darkgrey 0px 1px 3px 0px;
     box-shadow: darkgrey 0px 1px 3px 0px;
-    background-color: #fe0000;
+    background-color: rgba(255,255,255,0);
     box-sizing: border-box;
 }
 
