@@ -60,6 +60,10 @@
 			
 		});
 		
+		pdfh5.on("complete", function (status, msg, time) {
+			console.log("状态：" + status + "，总耗时：" + time + "毫秒，总页数：" + this.totalNum, msg);
+		});
+		
 		//配置项参数 renderType:"svg" 渲染模式为svg，默认canvas
 		// var pdfh5 = new Pdfh5('#demo', {
 		//     pdfurl: "./default.pdf",
