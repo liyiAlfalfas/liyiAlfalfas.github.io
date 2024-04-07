@@ -12,20 +12,20 @@
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">
-	<title>PDFH5</title>
+	<title></title>
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/pdfh5.css" />
-	<link href="https://www.gjtool.cn/download/pdfh5.png" type="image/x-icon" rel="shortcut icon" />
 	<style>
 		html,
 		body {
 			width: 100%;
 			height: 100%;
+			background: #ededed;
 		}
 
 		#demo {
 			display: none;
-			/* height: 33%; */
+			 height: 42%; 
 		}
 
 		#demo2 {
@@ -41,37 +41,7 @@
 </head>
 
 <body>
-	<div id="app">
-		<div class="text-wrapper">
-			<div class="text part1">
-				<div>
-					<span class="letter">
-						<div class="character">L</div> <span></span>
-					</span>
-					<span class="letter">
-						<div class="character">o</div> <span></span>
-					</span>
-					<span class="letter">
-						<div class="character">a</div> <span></span>
-					</span>
-					<span class="letter">
-						<div class="character">d</div> <span></span>
-					</span>
-					<span class="letter">
-						<div class="character">i</div> <span></span>
-					</span>
-					<span class="letter">
-						<div class="character">n</div> <span></span>
-					</span>
-					<span class="letter">
-						<div class="character">g</div> <span></span>
-					</span>
-				</div>
-			</div>
-			<div class="how-to"><span>正在加载中，请您耐心等待...</span></div>
-		</div>
-
-	</div>
+	
 	<div id="demo"></div>
 	<script src="js/pdf.js"></script>
 	<script src="js/pdf.worker.js"></script>
@@ -86,17 +56,15 @@
 		$("#app").remove();
 		$("#demo").show();
 		pdfh5 = new Pdfh5('#demo', {
-			pdfurl: "document/111.pdf",
-			// renderType: "svg",
-			// cMapUrl:"https://unpkg.com/pdfjs-dist@2.7.570/cmaps/",
-			// responseType: "blob" // blob arraybuffer
+			pdfurl: "document/20231122105507-3.pdf",
+			pageNum:true
+			
 		});
+		
 		pdfh5.on("complete", function (status, msg, time) {
 			console.log("状态：" + status + "，总耗时：" + time + "毫秒，总页数：" + this.totalNum, msg);
 		});
-		// pdfh5.on("scroll", function (scrollTop, currentNum) {
-		// 	console.log("scrollTop:"+scrollTop,"currentNum:"+currentNum);
-		// });
+		
 		//配置项参数 renderType:"svg" 渲染模式为svg，默认canvas
 		// var pdfh5 = new Pdfh5('#demo', {
 		//     pdfurl: "./default.pdf",
